@@ -1,0 +1,13 @@
+{
+  "headers": {
+    "/**": {
+      "Access-Control-Allow-Origin": "*"
+    }
+  },
+  "routes": {
+    "/images/*": "images/",
+    "/css/styles.css": "css/styles.css",
+    "/": "index.html",
+    "/*.html": "/"
+  }
+}
