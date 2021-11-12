@@ -2,6 +2,12 @@
   "headers": {
     "/**": {
       "Access-Control-Allow-Origin": "*"
+    },
+    "/images/*": {
+      "Cache-Control": "public, max-age=512000"
+    },
+    "/css/*": {
+      "Cache-Control": "public, max-age=512000"
     }
   },
   "routes": {
