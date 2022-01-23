@@ -270,119 +270,135 @@
     </div>
 
 
-    <!--Мобильное приложение (Mobile) -->
+    <!--Тег <main> предназначен для основного содержимого документа (основной контент). Контент внутри
+        элемента должен быть уникальным для всего документа и не должен содержать элементы, которые
+        повторяются в различных документах (боковые панели, навигационные ссылки, информация об авторских
+        правах, логотип сайта, формы поиска и тому подобное). Допускается использование элемента только
+        один раз в одном документе. -->
+    <main>
 
-    <section class="white-section" id="mobile">
 
-        <!-- container-fluid занимает всю доступную область просмотра при любых значениях ширины экрана: -->
-        <div class="container-fluid">
+        <!--Мобильное приложение (Mobile) -->
 
-            <div class="row align-items-lg-center">
+        <section class="white-section" id="mobile">
 
-                <div class="col-lg-6">
-                    <h1 class="section-heading">Ashot E-Shop ещё лучше в&nbsp;приложении!</h1>
-                    <button type="button" class="btn btn-dark btn-animated btn-lg my-3 my-sm-4 my-lg-5 me-2 me-sm-4">
-                        <i class="fab fa-apple"></i>
-                        Скачать</button>
-                    <button type="button"
-                        class="btn btn-outline-dark btn-animated btn-lg my-3 my-sm-4 my-lg-5 me-2 me-sm-4">
-                        <i class="fab fa-google-play"></i>
-                        Скачать</button>
-                    <div class="row align-items-center pb-4 pb-lg-2">
-                        <div class="col-6 col-lg-4">
-                            <img class="QR-code-image" src="images/QR-code.png" alt="QR-код">
-                        </div>
-                        <div class="col-6 col-lg-8">
-                            <p>Наведите камеру и&nbsp;скачайте бесплатное приложение Ashot E-Shop</p>
+            <!-- container-fluid занимает всю доступную область просмотра при любых значениях ширины экрана: -->
+            <div class="container-fluid">
+
+                <div class="row align-items-lg-center">
+
+                    <div class="col-lg-6">
+                        <h1 class="section-heading">Ashot E-Shop ещё лучше в&nbsp;приложении!</h1>
+                        <button type="button"
+                            class="btn btn-dark btn-animated btn-lg my-3 my-sm-4 my-lg-5 me-2 me-sm-4">
+                            <i class="fab fa-apple"></i>
+                            Скачать</button>
+                        <button type="button"
+                            class="btn btn-outline-dark btn-animated btn-lg my-3 my-sm-4 my-lg-5 me-2 me-sm-4">
+                            <i class="fab fa-google-play"></i>
+                            Скачать</button>
+                        <div class="row align-items-center pb-4 pb-lg-2">
+                            <div class="col-6 col-lg-4">
+                                <img class="QR-code-image" src="images/QR-code.png" alt="QR-код">
+                            </div>
+                            <div class="col-6 col-lg-8">
+                                <p>Наведите камеру и&nbsp;скачайте бесплатное приложение Ashot E-Shop</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-lg-6">
-                    <img class="mobile-image" src="images/mobile-app.jpg" alt="Мобильное приложение Ashot E-Shop">
-                </div>
+                    <div class="col-lg-6">
+                        <img class="mobile-image" src="images/mobile-app.jpg" alt="Мобильное приложение Ashot E-Shop">
+                    </div>
 
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Отзывы клиентов (Customer Reviews) -->
-
-    <section class="colored-section" id="reviews">
-
-        <div id="review-carousel" class="carousel slide" data-bs-ride="false">
-            <div class="carousel-inner">
-                <div class="carousel-item active container-fluid">
-                    <h2 class="review-text">У&nbsp;Ашота новые модели iPhone появляются раньше всех в&nbsp;Москве.
-                        Он&nbsp;всегда очень внимательный: помогает мне подобрать цвет, модель&nbsp;и,
-                        к&nbsp;тому&nbsp;же, осыпает меня комплементами. Всегда беру смартфоны у&nbsp;него и&nbsp;другим
-                        советую!</h2>
-                    <img class="review-image" src="images/lady.jpg" alt="Наташа">
-                    <!--Image source: https://thispersondoesnotexist.com/ -->
-                    <em>Наташа, Москва</em>
-                </div>
-                <div class="carousel-item container-fluid">
-                    <h2 class="review-text">Любое, даже самое экзотическое средство связи, можно найти у&nbsp;Ашота
-                        по&nbsp;сходной цене. Товар доставляется всего за&nbsp;пару дней.</h2>
-                    <img class="review-image" src="images/mister.jpg" alt="Азат">
-                    <!--Image source: https://thispersondoesnotexist.com/ -->
-                    <em>Азат, Казань</em>
-                </div>
-                <div class="carousel-item container-fluid">
-                    <h2 class="review-text">Уже двадцатый год&nbsp;я, муж, дети, а&nbsp;теперь и&nbsp;внуки, покупаем
-                        у&nbsp;Ашота. В&nbsp;его магазине можно найти любое средство связи&nbsp;&mdash;
-                        от&nbsp;телефонов и&nbsp;раций до&nbsp;почтовых голубей!</h2>
-                    <img class="review-image" src="images/grandma.jpg" alt="Виктория">
-                    <!--Image source: https://thispersondoesnotexist.com/ -->
-                    <em>Виктория, Ростов</em>
-                </div>
-            </div>
-            <!--Кнопки, прокручивающие карусель влево и вправо: -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#review-carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#review-carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-        </div>
-
-    </section>
-
-
-    <!--О нас (Features) -->
-
-    <section class="white-section" id="features">
-
-        <div class="container-fluid">
-
-            <div class="row">
-
-                <div class="col-lg-4 feature-box">
-                    <i class="fas fa-business-time fa-4x icon"></i>
-                    <h3 class="feature-title">Круглосуточная работа!</h3>
-                    <p>Без перерывов и&nbsp;выходных.</p>
-                </div>
-
-                <div class="col-lg-4 feature-box ">
-                    <i class="fas fa-award fa-4x icon"></i>
-                    <h3 class="feature-title">Надёжность, проверенная временем</h3>
-                    <p>25&nbsp;лет на&nbsp;рынке, начинали с&nbsp;Черкизовского! Сотни тысяч довольных клиентов!</p>
-                </div>
-
-                <div class="col-lg-4 feature-box">
-                    <i class="fas fa-hand-holding-usd fa-4x icon"></i>
-                    <h3 class="feature-title">Гарантия лучшей цены</h3>
-                    <p>Нашли в&nbsp;другом магазине товар дешевле? Сделаем скидку от&nbsp;цены конкурента!</p>
                 </div>
 
             </div>
 
-        </div>
+        </section>
 
-    </section>
+
+        <!-- Отзывы клиентов (Customer Reviews) -->
+
+        <section class="colored-section" id="reviews">
+
+            <div id="review-carousel" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active container-fluid">
+                        <h2 class="review-text">У&nbsp;Ашота новые модели iPhone появляются раньше всех в&nbsp;Москве.
+                            Он&nbsp;всегда очень внимательный: помогает мне подобрать цвет, модель&nbsp;и,
+                            к&nbsp;тому&nbsp;же, осыпает меня комплементами. Всегда беру смартфоны у&nbsp;него
+                            и&nbsp;другим
+                            советую!</h2>
+                        <img class="review-image" src="images/lady.jpg" alt="Наташа">
+                        <!--Image source: https://thispersondoesnotexist.com/ -->
+                        <em>Наташа, Москва</em>
+                    </div>
+                    <div class="carousel-item container-fluid">
+                        <h2 class="review-text">Любое, даже самое экзотическое средство связи, можно найти у&nbsp;Ашота
+                            по&nbsp;сходной цене. Товар доставляется всего за&nbsp;пару дней.</h2>
+                        <img class="review-image" src="images/mister.jpg" alt="Азат">
+                        <!--Image source: https://thispersondoesnotexist.com/ -->
+                        <em>Азат, Казань</em>
+                    </div>
+                    <div class="carousel-item container-fluid">
+                        <h2 class="review-text">Уже двадцатый год&nbsp;я, муж, дети, а&nbsp;теперь и&nbsp;внуки,
+                            покупаем
+                            у&nbsp;Ашота. В&nbsp;его магазине можно найти любое средство связи&nbsp;&mdash;
+                            от&nbsp;телефонов и&nbsp;раций до&nbsp;почтовых голубей!</h2>
+                        <img class="review-image" src="images/grandma.jpg" alt="Виктория">
+                        <!--Image source: https://thispersondoesnotexist.com/ -->
+                        <em>Виктория, Ростов</em>
+                    </div>
+                </div>
+                <!--Кнопки, прокручивающие карусель влево и вправо: -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#review-carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#review-carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+        </section>
+
+
+        <!--О нас (Features) -->
+
+        <section class="white-section" id="features">
+
+            <div class="container-fluid">
+
+                <div class="row">
+
+                    <div class="col-lg-4 feature-box">
+                        <i class="fas fa-business-time fa-4x icon"></i>
+                        <h3 class="feature-title">Круглосуточная работа!</h3>
+                        <p>Без перерывов и&nbsp;выходных.</p>
+                    </div>
+
+                    <div class="col-lg-4 feature-box ">
+                        <i class="fas fa-award fa-4x icon"></i>
+                        <h3 class="feature-title">Надёжность, проверенная временем</h3>
+                        <p>25&nbsp;лет на&nbsp;рынке, начинали с&nbsp;Черкизовского! Сотни тысяч довольных клиентов!</p>
+                    </div>
+
+                    <div class="col-lg-4 feature-box">
+                        <i class="fas fa-hand-holding-usd fa-4x icon"></i>
+                        <h3 class="feature-title">Гарантия лучшей цены</h3>
+                        <p>Нашли в&nbsp;другом магазине товар дешевле? Сделаем скидку от&nbsp;цены конкурента!</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
 
 
     <!--Подвал (Footer) -->
