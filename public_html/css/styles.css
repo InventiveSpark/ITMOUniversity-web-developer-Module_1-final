@@ -105,12 +105,12 @@ h1, h2, h3, h4, h5, h6 {
 /* Разделы (Sections) */
 
 /* Компенсация высоты шапки, скрывающей контент: */
-body>section:first-of-type {
+main>section:first-of-type {
     margin-top: 95px;
 }
 
 /* Компенсация высоты подвала, скрывающего контент: */
-body>section:last-of-type {
+main>section:last-of-type {
     margin-bottom: 95px;
 }
 
