@@ -3,10 +3,10 @@
     "/**": {
       "Access-Control-Allow-Origin": "*"
     },
-    "/images/*": {
+    "/images/**": {
       "Cache-Control": "public, max-age=512000"
     },
-    "/css/*": {
+    "/css/**": {
       "Cache-Control": "public, max-age=512000"
     }
   },

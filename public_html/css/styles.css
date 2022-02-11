@@ -102,6 +102,24 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.5s ease-in-out;
 }
 
+/* Кнопка закрытия модального окна: */
+.btn-close:focus {
+    box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 35%)
+}
+
+/* Элементы формы */
+
+.form-control:focus, .form-check-input:focus {
+    border-color: #ff4c68;
+    box-shadow: 0 0 0 0.25rem rgb(255 76 104 / 25%);
+}
+
+/* Флажок (чекбокс): */
+.form-check-input:checked {
+    background-color: #ff4c68;
+    border-color: #ff4c68;
+}
+
 /* Разделы (Sections) */
 
 /* Компенсация высоты шапки, скрывающей контент: */
@@ -277,6 +295,11 @@ main>section:last-of-type {
     transition: background-color 1s, color 0.3s;
 }
 
+/* Кнопка поиска при наведении указателя мыши: */
+.btn-outline-danger:focus {
+    box-shadow: 0 0 0 0.25rem rgb(255 76 104 / 25%);
+}
+
 /* Мобильное приложение (Mobile) */
 
 #mobile p {
@@ -317,7 +340,7 @@ main>section:last-of-type {
 
 /* Фотография клиента: */
 .review-image {
-    width: 10%;
+    /*max-width: 120px;*/
     min-width: 40px;
     /* Радиус скругления уголков рамки. Если рамка не задана,
        то скругление также происходит и с фоном: */
@@ -591,7 +614,7 @@ main>section:last-of-type {
        родителя и не прилипало ни к какому краю, а также обнуление отступа снизу: */
     margin: 1rem auto 0;
     /* Ширина элемента: */
-    width: 150px;
+    /* width: 150px; */
     /* Радиус скругления уголков рамки. Если рамка не задана,
        то скругление также происходит и с фоном: */
     border-radius: 10px;
@@ -632,19 +655,23 @@ main>section:last-of-type {
     #footer {
         display: none;
     }
+
     .navbar-brand {
         padding-top: 0.2rem;
         padding-bottom: 0.2rem;
     }
+
     .navbar-brand>img {
         max-height: 35px;
     }
+
     /* Компенсация высоты шапки, скрывающей контент, изменяется: */
-    body>section:first-of-type {
+    main>section:first-of-type {
         margin-top: 63px;
     }
+
     /* Компенсация высоты подвала, скрывающего контент, больше не требуется: */
-    body>section:last-of-type {
+    main>section:last-of-type {
         margin-bottom: 0;
     }
 }
@@ -655,7 +682,7 @@ main>section:last-of-type {
    переопределяться медиа-запросами. */
 
 /* Логотип смещается вправо так, чтобы располагаться ровно
-       над пунктами выпадающего меню. */
+   над пунктами выпадающего меню. */
 .navbar-brand {
     padding-left: 12px;
 }
@@ -696,6 +723,11 @@ main>section:last-of-type {
     font-size: 1.2rem;
 }
 
+/* Фотография клиента: */
+.review-image {
+    width: 15%;
+}
+
 /* Размер шрифта заголовков секций. */
 .section-heading {
     font-size: 2rem;
@@ -716,14 +748,22 @@ main>section:last-of-type {
     #modal-cart .modal-body {
         padding-left: 1rem;
     }
+
     /* Ограничения на размер изображений товаров в корзине: */
     #modal-cart img {
         max-width: 60px;
         max-height: 60px;
     }
+
     #modal-search .modal-body {
         padding: 1rem;
     }
+
+    /* Максимальная ширина изображения со смартфоном: */
+    .mobile-image {
+        max-width: 350px;
+    }
+
     .container-3d {
         /* Ширина элемента: */
         width: 300px;
@@ -736,26 +776,37 @@ main>section:last-of-type {
 
 /* При ширине окна просмотра браузера меньшей, чем medium (767px): */
 @media (min-width: 576px) {
+
     /* Увеличивается размер шрифта в первой строке таблицы товаров: */
     #modal-cart table>:not(caption) tr:first-child {
         font-size: 1.1rem;
     }
+
     /* Увеличиваются внутренние отступы в ячейках таблицы товаров: */
     #modal-cart .table> :not(caption)>tr>td {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
+
     #modal-search .modal-body {
         padding: 2rem;
     }
+
     /* Увеличивается размер шрифта отзыва. */
     .review-text {
         font-size: 1.5rem;
     }
+
+    /* Фотография клиента: */
+    .review-image {
+        width: 100px;
+    }
+
     /* Увеличивается размер шрифта заголовков секций: */
     .section-heading {
         font-size: 2.5rem;
     }
+
     .container-3d {
         /* Ширина элемента: */
         width: 480px;
@@ -768,19 +819,23 @@ main>section:last-of-type {
 
 /* При ширине окна просмотра браузера меньшей, чем large (992px): */
 @media (min-width: 768px) {
+
     /* Ограничения на размер изображений товаров в корзине: */
     #modal-cart img {
         max-width: 100px;
         max-height: 100px;
     }
-    /* Максимальная ширина изображения со смартфоном: */
-    .mobile-image {
-        max-width: 350px;
-    }
+
     /* Размер шрифта отзыва: */
     .review-text {
         font-size: 1.8rem;
     }
+
+    /* Фотография клиента: */
+    .review-image {
+        width: 120px;
+    }
+
     .container-3d {
         /* Ширина элемента: */
         width: 640px;
@@ -793,17 +848,21 @@ main>section:last-of-type {
 
 /* При ширине окна просмотра больше, чем large (992px): */
 @media (min-width: 992px) {
+
     /* Логотип располагается у левого у края родителя. */
     .navbar-brand {
         padding-left: 0;
     }
+
     #modal-search .modal-body {
         padding: 2.5rem;
     }
+
     /* Максимальная ширина изображения со смартфоном: */
     .mobile-image {
         max-width: 410px;
     }
+
     .container-3d {
         /* Ширина элемента: */
         width: 720px;
@@ -816,27 +875,38 @@ main>section:last-of-type {
 
 /* Медиа-запрос управляет выводом страницы на устройство «Принтер»: */
 @media print {
+
     /* Шапка, подвал и кнопки прокрутки карусели удаляются
        из печатаемого документа: */
     #title, #footer, button.carousel-control-prev, button.carousel-control-next {
         display: none;
     }
+
     /* Компенсация высоты шапки, скрывающей контент, больше не требуется: */
-    body>section:first-of-type {
+    main>section:first-of-type {
         margin-top: 0;
     }
+
     /* Компенсация высоты подвала, скрывающего контент, больше не требуется: */
-    body>section:last-of-type {
+    main>section:last-of-type {
         margin-bottom: 0;
     }
+
     .container-fluid {
         /* Внутренние отступы в контейнере уменьшаются: */
         padding: 2rem;
     }
+
     /* Максимальная ширина изображения со смартфоном: */
     .mobile-image {
         max-width: 200px;
     }
+
+    /* Минимальная высота контента карусели сбрасывается, т.к. при печати нет прокрутки: */
+    .carousel-item {
+        min-height: auto;
+    }
+
     /* Автоматическое добавление разрыва страницы до/после определенных элементов
        при необходимости: */
     section, .catalog-column, .product-card {
